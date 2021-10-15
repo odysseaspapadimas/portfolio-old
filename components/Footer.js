@@ -1,6 +1,6 @@
 import tw from "tailwind-styled-components/dist/tailwind";
 
-const FooterContainer = tw.div`py-3 px-4 bg-gray-900 w-screen mt-10 text-center`;
+const FooterContainer = tw.div`py-4 px-4 bg-gray-900 w-screen mt-10 text-center text-lg`;
 
 const Footer = () => {
   return (
