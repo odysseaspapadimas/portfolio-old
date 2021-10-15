@@ -4,6 +4,7 @@ import Background from "../components/Background";
 import Hero from "../components/Hero/Hero";
 import { useEffect, useState, useRef } from "react";
 import Projects from "../components/Projects/Projects";
+import Footer from "../components/Footer";
 
 const MainContainer = tw.div`flex flex-col items-center justify-center`;
 
@@ -26,8 +27,10 @@ function Home() {
         <title>Odysseas Papadimas - Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Hero scrollToProjects={scrollToProjects} />
       <Projects ref={projectsRef} />
+      <Footer />
     </MainContainer>
   );
 }

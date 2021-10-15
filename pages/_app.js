@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
           body {
             background-color: #0b0e11 !important;
             color: #fff !important;
-            font-family: "Raleway", sans-serif;
+            font-family: "Abel", sans-serif;
             overflow-x: hidden;
           }
         `}

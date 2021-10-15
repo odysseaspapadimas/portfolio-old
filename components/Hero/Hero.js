@@ -6,18 +6,19 @@ import Typewriter from "typewriter-effect";
 import Skills from "./Skills";
 
 const HeroContainer = tw.div`text-center h-screen flex flex-col items-center justify-center`;
-const Header = tw.h1`text-2xl`;
-const SubHeader = tw.h1`text-base`;
+const Header = tw.h1`text-3xl px-1`;
+const SubHeader = tw.h1`text-xl px-2`;
 const SocialContainer = tw.div`flex justify-center items-center mt-4`;
 const SkillsContainer = tw(motion.div)`flex flex-col space-y-2 mt-4`;
 const ProjectsButton = tw(
   motion.button
-)`p-4 rounded-sm inline-block mt-4 cursor-pointer bg-secondary hover:bg-secondary-hover hover:scale-125 duration-200`;
+)`p-4 rounded-sm inline-block mt-4 cursor-pointer bg-secondary hover:bg-secondary-hover hover:scale-125 duration-200 text-lg`;
 
 const Hero = ({ scrollToProjects }) => {
   return (
     <HeroContainer>
       <Header>
+        
         <Typewriter
           options={{
             cursor: "",
@@ -53,7 +54,7 @@ const Hero = ({ scrollToProjects }) => {
         animate={{ x: 0 }}
         transition={{ delay: 2.4, duration: 0.4 }}
       >
-        <h1 className="text-lg">My skills:</h1>
+        <h1 className="text-2xl">My skills:</h1>
         <Skills />
       </SkillsContainer>
       <ProjectsButton

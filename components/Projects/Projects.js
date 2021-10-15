@@ -26,6 +26,18 @@ const Projects = forwardRef(({}, ref) => {
           img="/parea.png"
           gitLink="https://github.com/odysseaspapadimas/parea"
           webLink="https://parea.vercel.app/"
+          left={true}
+        />
+        <ProjectCard
+          name="Portfolio"
+          desc="The website you're currently in, built from scratch."
+          tags={[
+            ["Next.js", "bg-gray-900"],
+            ["Three.js", "bg-purple-800"],
+          ]}
+          img="/portfolio.png"
+          gitLink="https://github.com/odysseaspapadimas/portfolio"
+          webLink="https://odysseaspapadimas.vercel.app/"
         />
         <ProjectCard
           name="HaveBeen"
@@ -37,6 +49,7 @@ const Projects = forwardRef(({}, ref) => {
           img="/havebeen.png"
           gitLink="https://github.com/odysseaspapadimas/havebeen"
           webLink="https://havebeen.vercel.app/"
+          left={true}
         />
         <ProjectCard
           name="Poll Maker"
@@ -56,14 +69,7 @@ const Projects = forwardRef(({}, ref) => {
           img="/mastermind.png"
           gitLink="https://github.com/odysseaspapadimas/mastermind"
           webLink="https://mastermind-alpha.vercel.app/"
-        />
-        <ProjectCard
-          name="Mastermind"
-          desc="A simple clone of the popular game Mastermind."
-          tags={[["React.js", "bg-blue-500"]]}
-          img="/mastermind.png"
-          gitLink="https://github.com/odysseaspapadimas/mastermind"
-          webLink="https://mastermind-alpha.vercel.app/"
+          left={true}
         />
       </ProjectCardsContainer>
     </ProjectsContainer>

@@ -15,11 +15,9 @@ const Link = tw(
   motion.a
 )`py-2 px-4 rounded-sm bg-secondary hover:bg-secondaryHover duration-200`;
 
-const ProjectCard = ({ name, desc, tags, img, gitLink, webLink }) => {
+const ProjectCard = ({ name, desc, tags, img, gitLink, webLink, left }) => {
   return (
-    <ProjectCardContainer
-     whileHover={{scale: 1.08, rotate: -2}}
-    >
+    <ProjectCardContainer whileHover={{ scale: 1.08, rotate: left ? -2 : 2 }}>
       <ImageContainer>
         <img src={img} alt={name} className="w-full h-full" />
       </ImageContainer>
@@ -33,8 +31,8 @@ const ProjectCard = ({ name, desc, tags, img, gitLink, webLink }) => {
             ))}
         </TagsContainer>
         <Info>
-          <h1 className="text-3xl">{name}</h1>
-          <p>{desc}</p>
+          <h1 className="text-4xl">{name}</h1>
+          <p className="text-xl">{desc}</p>
         </Info>
 
         <LinksContainer>

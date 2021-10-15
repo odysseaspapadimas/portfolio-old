@@ -16,15 +16,15 @@ function ReactBox({ position, rotation, textureUrl }) {
   const ref = useRef();
   const texture = new THREE.TextureLoader().load(textureUrl);
   useFrame(() => {
-    ref.current.position.y -= 0.08;
-    ref.current.position.x += 0.01;
-    ref.current.rotation.z += 0.04;
-    ref.current.rotation.y += 0.04;
+    //   ref.current.position.y -= 0.08;
+    //   ref.current.position.x += 0.01;
+   // ref.current.rotation.z += 0.04;
+    ref.current.rotation.y += 0.02;
 
-    if (ref.current.position.y < -15) {
-      ref.current.position.x = -1;
-      ref.current.position.y = 10;
-    }
+    //   if (ref.current.position.y < -15) {
+    //     ref.current.position.x = -1;
+    //     ref.current.position.y = 10;
+    //   }
   });
   return (
     <mesh position={position} rotation={rotation} ref={ref}>
@@ -46,8 +46,8 @@ const Background = () => {
     >
       <StarsElement />
       <ReactBox
-        position={[-1, 10, 0]}
-        rotation={[0.3, 0, 0]}
+        position={[1, -3.8, -1]}
+        rotation={[0, 0, 0]}
         textureUrl={
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
         }
