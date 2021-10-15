@@ -17,14 +17,14 @@ const Link = tw(
 
 const ProjectCard = ({ name, desc, tags, img, gitLink, webLink, left }) => {
   return (
-    <ProjectCardContainer whileHover={{ scale: 1.08, rotate: left ? -2 : 2 }}>
+    <ProjectCardContainer whileHover={{ scale: 1.08}}>
       <ImageContainer>
         <img src={img} alt={name} className="w-full h-full" />
       </ImageContainer>
       <InfoContainer>
         <TagsContainer>
           {tags &&
-            tags.map((tag, i) => (
+            tags.map((tag, i) =>  (
               <Tag key={i} $bg={tag[1]} $text={tag[2]}>
                 {tag[0]}
               </Tag>
