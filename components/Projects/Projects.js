@@ -15,7 +15,7 @@ const Projects = forwardRef(({}, ref) => {
       <ProjectCardsContainer>
         <ProjectCard
           name="Parea"
-          desc="Full-stack Instagram clone in the form of a PWA."
+          desc="Full-stack Instagram clone with PWA capabilities."
           tags={[
             ["Next.js", "bg-gray-800"],
             ["NextAuth", "bg-gray-800"],
@@ -45,6 +45,7 @@ const Projects = forwardRef(({}, ref) => {
           tags={[
             ["Next.js", "bg-gray-800"],
             ["MongoDB", "bg-green-600"],
+            ["Firebase", "bg-yellow-400", "text-black"],
           ]}
           img="/havebeen.png"
           gitLink="https://github.com/odysseaspapadimas/havebeen"

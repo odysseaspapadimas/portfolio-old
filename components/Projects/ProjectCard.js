@@ -5,7 +5,7 @@ const ProjectCardContainer = tw(
   motion.div
 )`flex justify-center items-center space-x-2 border-2 border-gray-700 rounded-sm p-2 m-2 md:m-0 md:p-5 max-w-lg`;
 const Tag = tw.p`${({ $bg, $text }) =>
-  `${$bg} ${$text}`} text-sm p-2 m-1 rounded-sm`;
+  `${$bg} ${$text}`} text-base p-2 m-1 rounded-sm`;
 const ImageContainer = tw.div`min-w-40 min-h-40`;
 const InfoContainer = tw.div`flex flex-col items-center h-full`;
 const TagsContainer = tw.div`self-start flex items-center flex-wrap`;
@@ -25,7 +25,7 @@ const ProjectCard = ({ name, desc, tags, img, gitLink, webLink, left }) => {
         <TagsContainer>
           {tags &&
             tags.map((tag, i) => (
-              <Tag key={i} $bg={tag[1]}>
+              <Tag key={i} $bg={tag[1]} $text={tag[2]}>
                 {tag[0]}
               </Tag>
             ))}
