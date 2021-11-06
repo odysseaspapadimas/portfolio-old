@@ -23,6 +23,11 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
             rel="stylesheet"
           ></link>
+
+          <meta
+            name="google-site-verification"
+            content="1msgL4asL05YBQsMUhxWYSjdYqu3rCo9OFN9hU7j2TU"
+          />
         </Head>
         <body>
           <Main />

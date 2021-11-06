@@ -26,7 +26,6 @@ function Home() {
       <Head>
         <title>Odysseas Papadimas - Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="google-site-verification" content="1msgL4asL05YBQsMUhxWYSjdYqu3rCo9OFN9hU7j2TU" />
       </Head>
 
       <Hero scrollToProjects={scrollToProjects} />
