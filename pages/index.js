@@ -26,6 +26,11 @@ function Home() {
       <Head>
         <title>Odysseas Papadimas - Web Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="I am a Web Developer, ready for hire. Check out my portfolio."
+        />
+         <meta name="keywords" content="odysseas papadimas, portfolio, web developer, react, nextjs" />
       </Head>
 
       <Hero scrollToProjects={scrollToProjects} />
