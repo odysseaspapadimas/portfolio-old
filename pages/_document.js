@@ -24,10 +24,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
 
-          <meta
-            name="google-site-verification"
-            content="1msgL4asL05YBQsMUhxWYSjdYqu3rCo9OFN9hU7j2TU"
-          />
+          <meta name="google-site-verification" content="X2fF_nwlB99UFCdk3ZfAAxZzH_1mm4wwofF6eoqMfw8" />
         </Head>
         <body>
           <Main />
